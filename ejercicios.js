@@ -20,11 +20,11 @@ function compareSeven() {
 // Operadores lógicos
 // 4. Verifica si puedes comprar un producto de 1500 con un descuento del 25% teniendo 1150€ e imprime si puedes o no.
 function canBuyProduct() {
-  let pr = 1500;
-  let m = 1150;
-  let p = pr - pr * 0.25;
-  let comp = p <= m;
-  console.log(comp);
+  let producto = 1500;
+  let dinero = 1150;
+  let pago = producto - producto * 0.25;
+  let comp = dinero >= pago;
+  console.log(comp ? "Si puedes comprar" : "No puedes comprar");
 }
 
 // Variables
