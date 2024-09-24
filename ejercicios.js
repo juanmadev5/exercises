@@ -1,3 +1,5 @@
+"https://github.com/juanmadev5/exercises/blob/master/ejercicios.js"
+
 // Operadores de comparación
 // 1. Comprueba si 10 es mayor o igual que 9 e imprime el resultado en consola.
 function compareTenAndNine() {
