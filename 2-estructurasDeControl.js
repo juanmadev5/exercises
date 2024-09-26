@@ -17,7 +17,6 @@ function verificarParidad(numero) {
 // "Menor de edad" (menor a 18), "Adulto" (entre 18 y 65), o "Adulto mayor" (mayor a 65).
 function clasificarEdad(edad) {
     // Tu código aquí
-    let edad = 17
     if (edad > 17) {
         console.log("Adulto")
     } else if (edad > 64) {
