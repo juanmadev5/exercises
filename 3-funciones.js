@@ -3,9 +3,9 @@
 // 1. Tu primera función
 // 1.1 Escribe una función llamada `despedir` que imprima "Adiós" en la consola.
     // Tu código aquí
-function despedir() [
+function despedir() {
     console.log("Adiós")
-]
+}
 
 // 1.2 Crea una función llamada `multiplicarPorDos` que tome un número como parámetro y devuelva el doble de ese número.
     // Tu código aquí
@@ -53,7 +53,7 @@ function dividir(a,b) {
 // 3. Function Expression
 // 3.1 Crea una **function expression** que multiplique dos números y asígnala a la variable `multiplicar`.
     // Tu código aquí
-let multiplicar = function (a,b) {
+let multiplicarExpr = function (a,b) {
     return a*b
 };
 
@@ -64,7 +64,7 @@ let saludar = function (nombre) {return "Hola " + nombre}
 // 3.3 Crea una **function expression** llamada `esPar` que acepte un número como parámetro y devuelva `true` si el número es par, o `false` en caso contrario.
     // Tu código aquí
 let esPar = function (a) {
-  return a % 2 === 0 ? true : false
+  return a % 2 === 0;
 }
 
 // 4. Funciones Flecha
@@ -77,12 +77,12 @@ multiplicarFlecha = (a,b) => a*b
 
 // 4.2 Crea una función flecha llamada `saludarFlecha` que reciba un parámetro `nombre` y devuelva "Hola [nombre]".
     // Tu código aquí
-saludarFlecha = (nombre) => "Hola "+nombre
+saludarFlecha = (nombre) => "Hola "+ nombre
 
 // 4.3 Escribe una función flecha llamada `calcularArea` que reciba el radio de un círculo y devuelva el área del círculo. Usa la fórmula A = π * r².
 const calcularArea = radio => {
     // Tu código aquí
-    return 3.14 * radio**2
+    return Math.PI * radio ** 2;
 };
 
 // 5. Recursividad
@@ -96,15 +96,16 @@ function suma(n) {
 // 5.2 Escribe una función que calcule la sucesión de Fibonacci de forma recursiva. La sucesión de Fibonacci es una serie de números que empieza por 0 y 1 y cada número es la suma de los dos anteriores. Por ejemplo: `fibonacci(6) -> 8`
 function fibonacci(n) {
     // Tu código aquí
-    if(n===0 || n===1) return 1;
-    return fibonacci(n-1) + fibonacci(n-2)
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 // 5.3 Crea una función recursiva llamada `factorial` que calcule el factorial de un número. El factorial de n (n!) es el producto de todos los números enteros positivos menores o iguales a n.
 function factorial(n) {
     // Tu código aquí
-    if(n===0 || n===1) return n;
-    return n*  factorial(n-1)
+   if (n === 0 || n === 1) return 1;
+    return n * factorial(n - 1);
 }
 
 // 5.4 Escribe una función recursiva que calcule la potencia de un número dado el exponente. Por ejemplo: `potencia(2, 3) -> 8`
