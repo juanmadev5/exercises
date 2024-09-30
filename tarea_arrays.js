@@ -3,7 +3,7 @@
 // Debes sacar el primer elemento (nombre del cliente), añadir "bebida" al inicio del array y añadir el nombre del cliente al final.
 function procesarPedido(pedido) {
   let nombre = pedido.shift();
-  pedido.push("bebida");
+  pedido.unshift("bebida");
   pedido.push(nombre);
 }
 
@@ -37,7 +37,9 @@ console.log(palabrasTerminanConA(palabras)); // -> true
 function buscaPalabras(words, word) {
   // Tu código aquí
   let i = words.indexOf(word);
-  return words.slice(i + 1);
+  if(i === -1) return [];
+  let tLength = word.length
+  return words.filter(w => w.length > tLength);
 }
 
 // 5. Matrices
