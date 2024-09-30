@@ -16,15 +16,15 @@ function verificarParidad(numero) {
 // Instrucción: Escribe una función que reciba una edad y determine si la persona es:
 // "Menor de edad" (menor a 18), "Adulto" (entre 18 y 65), o "Adulto mayor" (mayor a 65).
 function clasificarEdad(edad) {
-    // Tu código aquí
-    if (edad > 17) {
-        console.log("Adulto")
-    } else if (edad > 64) {
+    if (edad > 64) {
         console.log("Adulto mayor");
+    } else if (edad > 17) {
+        console.log("Adulto");
     } else {
         console.log("Menor de edad");
     }
 }
+
 
 // Ejercicio 3: Bucles while
 // Instrucción: Crea una función que reciba un número entero positivo y utilice un bucle `while` para imprimir todos los números desde ese número hasta 0.
@@ -45,7 +45,8 @@ function repetirMensaje() {
     let x = 0
     do {
         console.log("Estoy aprendiendo JavaScript")
-    } while (x < 6)
+        x++;
+    } while (x < 5)
 }
 // Ejercicio 5: Bucle for
 // Instrucción: Escribe una función que reciba un número entero positivo y utilice un bucle `for` para imprimir todos los números pares entre 0 y ese número.
@@ -62,7 +63,7 @@ function imprimirPares(numero) {
 // Instrucción: Escribe una función que recorra los números del 1 al 10, pero detén el bucle cuando el número sea igual a 6.
 function detenerEnSeis() {
     // Tu código aquí
-    let i = 0
+    let i = 1
     while (i < 11) {
         if (i === 6) {
             break
@@ -75,12 +76,11 @@ function detenerEnSeis() {
 // Instrucción: Crea una función que recorra los números del 1 al 10, pero que se salte el número 5 usando `continue`.
 function saltarCinco() {
     // Tu código aquí
-    let i = 0
-    while (i < 11) {
-        i++
+    for (let i = 1; i <= 10; i++) {
         if (i === 5) {
-            continue
+            continue;
         }
+        console.log(i);
     }
 }
 
@@ -88,7 +88,6 @@ function saltarCinco() {
 // Instrucción: Escribe una función que reciba un número del 1 al 7 y devuelva el día de la semana correspondiente (1 es "Lunes", 2 es "Martes", ..., 7 es "Domingo"). Usa la estructura `switch`.
 function obtenerDiaSemana(dia) {
     // Tu código aquí
-    let dia = 6
     switch (dia) {
         case 1:
             console.log("Lunes")
